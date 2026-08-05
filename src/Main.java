@@ -19,7 +19,8 @@ public class Main {
 
         switch (choice) {
     case 1:
-        System.out.println("\nStarting Java Lessons...");
+Lesson lesson = new Lesson("Java Basics");
+lesson.startLesson();
         break;
 
     case 2:

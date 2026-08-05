@@ -29,7 +29,10 @@ public class LessonMenu {
                 Lesson lesson = new Lesson("Lesson 1: What is Java?");
                 lesson.startLesson();
                 break;
-
+            case 2:
+    Lesson2 lesson2 = new Lesson2();
+    lesson2.startLesson();
+    break;
             default:
                 System.out.println("This lesson will be added soon.");
         }

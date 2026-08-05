@@ -19,23 +19,23 @@ public class Main {
 
         switch (choice) {
     case 1:
-        System.out.println("\n📚 Starting Java Lessons...");
+        System.out.println("\nStarting Java Lessons...");
         break;
 
     case 2:
-        System.out.println("\n📝 Starting Java Quiz...");
+        System.out.println("\nStarting Java Quiz...");
         break;
 
     case 3:
-        System.out.println("\n📊 Displaying Progress...");
+        System.out.println("\nDisplaying Progress...");
         break;
 
     case 4:
-        System.out.println("\n👋 Thank you for using Java Learning Hub!");
+        System.out.println("\nThank you for using Java Learning Hub!");
         break;
 
     default:
-        System.out.println("\n❌ Invalid option. Please choose 1-4.");
+        System.out.println("\nInvalid option. Please choose 1-4.");
 }
 
         input.close();

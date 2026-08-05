@@ -37,6 +37,10 @@ public class LessonMenu {
     Lesson3 lesson3 = new Lesson3();
     lesson3.startLesson();
     break;
+            case 4:
+    Lesson4 lesson4 = new Lesson4();
+    lesson4.startLesson();
+    break;
           default:
         System.out.println("This lesson will be added soon.");
         }

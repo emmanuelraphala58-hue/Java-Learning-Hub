@@ -50,17 +50,21 @@ public class Quiz {
 
             System.out.println();
             System.out.println("Question " + (i + 1));
-            System.out.println(questions[i]);
+            System.out.println(questions[i].getQuestion());
 
+for (String option : questions[i].getOptions()) {
+    System.out.println(option);
+}
             System.out.print("Your answer: ");
             String userAnswer = input.nextLine();
 
-            if (userAnswer.equalsIgnoreCase(answers[i])) {
-                System.out.println("✅ Correct!");
+    if (userAnswer.equalsIgnoreCase(questions[i].getAnswer())) {
+                System.out.println("Correct!");
                 score++;
             } else {
-                System.out.println("❌ Wrong!");
-                System.out.println("Correct answer: " + answers[i]);
+                System.out.println("Wrong!");
+               System.out.println("Correct answer: " + questions[i].getAnswer());
+System.out.println("Explanation: " + questions[i].getExplanation()); 
             }
         }
 

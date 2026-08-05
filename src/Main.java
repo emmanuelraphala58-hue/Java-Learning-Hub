@@ -16,6 +16,7 @@ public class Main {
         System.out.print("Choose an option: ");
 
         int choice = input.nextInt();
+input.nextLine();
 
         switch (choice) {
     case 1:

@@ -24,8 +24,9 @@ lesson.startLesson();
         break;
 
     case 2:
-        System.out.println("\nStarting Java Quiz...");
-        break;
+    Quiz quiz = new Quiz();
+    quiz.startQuiz();
+    break;
 
     case 3:
         System.out.println("\nDisplaying Progress...");

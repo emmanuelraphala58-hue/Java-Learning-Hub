@@ -7,21 +7,44 @@ public class Quiz {
         Scanner input = new Scanner(System.in);
         int score = 0;
 
-        String[] questions = {
-            "Who created Java?",
-            "Which company owns Java today?",
-            "What keyword is used to create an object?",
-            "Which method starts every Java program?",
-            "Which keyword is used to declare a class?"
-        };
+        Question[] questions = {
 
-        String[] answers = {
-            "James Gosling",
-            "Oracle",
-            "new",
-            "main",
-            "class"
-        };
+    new Question(
+        "Who created Java?",
+        new String[]{"A. Dennis Ritchie", "B. James Gosling", "C. Bill Gates", "D. Guido van Rossum"},
+        "B",
+        "James Gosling created Java at Sun Microsystems."
+    ),
+
+    new Question(
+        "Which company owns Java today?",
+        new String[]{"A. Microsoft", "B. IBM", "C. Oracle", "D. Google"},
+        "C",
+        "Oracle acquired Sun Microsystems in 2010."
+    ),
+
+    new Question(
+        "Which keyword is used to create an object?",
+        new String[]{"A. class", "B. new", "C. object", "D. create"},
+        "B",
+        "The 'new' keyword creates an object."
+    ),
+
+    new Question(
+        "Which method starts every Java program?",
+        new String[]{"A. start()", "B. run()", "C. main()", "D. execute()"},
+        "C",
+        "Every Java application starts with the main() method."
+    ),
+
+    new Question(
+        "Which keyword is used to declare a class?",
+        new String[]{"A. class", "B. public", "C. static", "D. void"},
+        "A",
+        "The 'class' keyword is used to declare a class."
+    )
+
+};
 
         for (int i = 0; i < questions.length; i++) {
 

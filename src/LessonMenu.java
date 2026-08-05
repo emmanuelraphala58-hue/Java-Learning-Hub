@@ -33,8 +33,12 @@ public class LessonMenu {
     Lesson2 lesson2 = new Lesson2();
     lesson2.startLesson();
     break;
-            default:
-                System.out.println("This lesson will be added soon.");
+            case 3:
+    Lesson3 lesson3 = new Lesson3();
+    lesson3.startLesson();
+    break;
+          default:
+        System.out.println("This lesson will be added soon.");
         }
     }
 }

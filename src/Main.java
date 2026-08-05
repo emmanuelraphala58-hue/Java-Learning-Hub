@@ -20,9 +20,9 @@ input.nextLine();
 
         switch (choice) {
     case 1:
-Lesson lesson = new Lesson("Java Basics");
-lesson.startLesson();
-        break;
+    LessonMenu lessonMenu = new LessonMenu();
+    lessonMenu.showLessons();
+    break;
 
     case 2:
     Quiz quiz = new Quiz();

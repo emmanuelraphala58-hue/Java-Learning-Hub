@@ -42,7 +42,8 @@ public class LessonMenu {
     lesson4.startLesson();
     break;
           default:
-        System.out.println("This lesson will be added soon.");
+    System.out.println("Invalid choice!");
+    System.out.println("Please select a lesson from the menu.");
         }
     }
 }

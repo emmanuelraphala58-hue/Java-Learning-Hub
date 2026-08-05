@@ -69,7 +69,23 @@ System.out.println("Explanation: " + questions[i].getExplanation());
         }
 
         System.out.println();
-        System.out.println("Quiz Finished!");
-        System.out.println("Your score: " + score + "/" + questions.length);
+System.out.println("======================");
+System.out.println("     QUIZ RESULTS");
+System.out.println("======================");
+System.out.println("Score: " + score + "/" + questions.length);
+
+double percent = (score * 100.0) / questions.length;
+
+System.out.println("Percentage: " + percent + "%");
+
+if (percent == 100) {
+    System.out.println("Excellent! Perfect score!");
+} else if (percent >= 80) {
+    System.out.println("Great work!");
+} else if (percent >= 60) {
+    System.out.println("Good job! Keep practicing.");
+} else {
+    System.out.println("Don't give up. Review the lesson and try again.");
+}
     }
 }

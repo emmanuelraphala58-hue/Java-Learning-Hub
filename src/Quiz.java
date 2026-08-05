@@ -6,7 +6,7 @@ public class Quiz {
 
         Scanner input = new Scanner(System.in);
         int score = 0;
-
+Progress progress = new Progress();
         Question[] questions = {
 
     new Question(
@@ -86,6 +86,11 @@ if (percent == 100) {
     System.out.println("Good job! Keep practicing.");
 } else {
     System.out.println("Don't give up. Review the lesson and try again.");
+}if (percent >= 60) {
+    progress.passQuiz();
 }
+
+progress.showProgress();
     }
+}
 }

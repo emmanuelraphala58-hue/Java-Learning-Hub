@@ -45,6 +45,10 @@ public class LessonMenu {
     Lesson5 lesson5 = new Lesson5();
     lesson5.startLesson();
     break;
+          case 6:
+    Lesson6 lesson6 = new Lesson6();
+    lesson6.startLesson();
+    break;
         default:
     System.out.println("Invalid choice!");
     System.out.println("Please select a lesson from the menu.");
